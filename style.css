@@ -1,0 +1,285 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: League Spartan;
+}
+
+body{
+    background-color: transparent;
+    position: relative;
+
+}
+
+header{
+    min-height: 150px;
+    background-color: hsl(180, 29%, 50%);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.filter{
+    width: 100%;
+    position: relative;
+    height: auto;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem;
+    height: 3rem;
+    margin: auto;
+    bottom: 50px;
+    gap: 1rem;
+    background: white;
+    max-width: 1000px;
+    border-radius: 0.5rem;
+    box-shadow:  0 5px 30px 10px hsl(180, 29%, 50%, .2);
+}
+
+.span{
+    display: inline-block;
+    background: hsl(180, 31%, 95%);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 3px;
+}
+
+.filter-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.span p {
+    padding: .5em;
+    display: inline-block;
+    font-size: .8rem;
+    font-weight: 700;
+    color: hsl(180, 29%, 50%);
+}
+
+.span button {
+    height: 30px;
+    aspect-ratio: 1;
+    background: hsl(180, 29%, 50%);
+    border: none;
+    cursor: pointer;
+    transition: .13s ease;
+}
+
+.filter-sub button:hover {
+    background: hsl(180, 14%, 20%);
+}
+
+.filter-sub img {
+    margin: auto;
+}
+
+.clear {
+    color: hsl(180, 8%, 52%);
+    background: none;
+    border: none;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.clear:hover {
+    color: hsl(180, 29%, 50%);
+    text-decoration: underline;
+}
+
+#main-container{
+    padding: 25px 1.5em 1em;
+    background-color: hsl(180, 52%, 96%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container{
+    background-color: hsl(180, 31%, 95%);
+    height: auto;
+    margin-left: 0.3rem;
+    margin-block: 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1rem;
+    padding-right: 1rem;
+    padding-left: 1.25rem;
+    cursor: pointer;
+    box-shadow:  0 5px 30px 10px hsl(180, 29%, 50%, .2);
+}
+
+.container.remove {
+    animation: remove .5s ease-in-out forwards;
+}
+
+@keyframes remove {
+    0% {
+        position: relative;
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    90% {
+        position: relative;
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        position: absolute;
+        opacity: 0;
+    }
+}
+
+.image-container{
+    margin-top: -1.25rem;
+}
+
+.image-container img{
+    width: 3rem;
+}
+
+.job-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.first{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.important-info{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.company-name{
+    font-size: 1rem;
+    font-weight: 800;
+    color: hsl(180, 29%, 50%);
+    letter-spacing: 0.5px;
+}
+
+.New{
+    background-color: hsl(180, 29%, 50%);
+    padding-inline: 0.5rem;
+    border-radius: 1rem;
+    color: white;
+    font-weight: 600;
+    padding-top: 0.25rem;
+    text-transform: uppercase;
+}
+
+.featured{
+    background-color: hsl(180, 14%, 20%);
+    padding-inline: 0.5rem;
+    padding-block: 0.2rem;
+    border-radius: 1rem;
+    color: white;
+    font-weight: 600;
+    padding-top: 0.25rem;
+}
+
+.position{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: hsl(180, 14%, 20%);
+    text-decoration: none;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.position:hover{
+    color: hsl(180, 29%, 50%);
+}
+
+.availability{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.availability p{
+    font-size: small;
+    font-weight: 500;
+    color: hsl(180, 8%, 52%);
+}
+
+.availability div{
+    background-color: hsl(180, 8%, 52%);
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 1rem;
+}
+
+.container hr {
+    margin: 1em 0;
+    opacity: .5;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.tags button{
+    font-size: medium;
+    font-weight: 700;
+    background-color: hsl(180, 48%, 86%);
+    padding-inline: 0.5rem;
+    padding-block: 0.3rem;
+    border-radius: 0.2rem;
+    color: hsl(180, 29%, 50%);
+    border: none;
+    cursor: pointer;
+    transition: .1s ease;
+}
+
+.tags button:hover {
+    color: hsl(180, 31%, 95%);
+    background-color: hsl(180, 29%, 50%);
+}
+
+@media (min-width: 700px) {
+
+    #main-container{
+        padding-inline: 8rem;
+    }
+
+    .container{
+        flex-direction: row;
+        align-items: center;
+        padding-block: 2rem;
+    }
+
+    .image-container{
+        margin-top: 0;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .job-info{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+}
