@@ -1,4 +1,4 @@
-https://github.com/Sefat-Khan/static-job-listings-master/blob/main/design/desktop-preview.jpg
+desktop-design.jpg
 
 Job Listings Website
 
