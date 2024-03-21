@@ -33,7 +33,7 @@ Contributions are welcome! If you find any bugs or have suggestions for improvem
 
 Author
 
-Sefat Khan - GitHub Profile.
+Sefat Khan - [GitHub Profile](https://github.com/Sefat-Khan).
 
 project preview link:
 
