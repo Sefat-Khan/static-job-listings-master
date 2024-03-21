@@ -1,3 +1,5 @@
+https://github.com/Sefat-Khan/static-job-listings-master/blob/main/design/desktop-preview.jpg
+
 Job Listings Website
 
 This is a simple HTML webpage for displaying job listings. It includes basic styling and functionality.
