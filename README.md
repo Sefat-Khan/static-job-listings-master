@@ -35,7 +35,7 @@ Author
 
 Sefat Khan - [GitHub Profile](https://github.com/Sefat-Khan).
 
-project preview link:
+project preview link:https://sefat-khan.github.io/static-job-listings-master/.
 
 License
 This project is licensed under the MIT License.
